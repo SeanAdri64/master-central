@@ -72,6 +72,7 @@ Aplicación web desarrollada en Laravel para la gestión de reservas de laborato
 * PHP 8
 * SQLite
 * Bootstrap 5
+*  Tinker
 
 ## Funcionalidades
 CRUD
@@ -105,3 +106,70 @@ Se implementaron validaciones, relaciones Eloquent y diseño con Bootstrap.
 ## 📎 Autor
 
 Sean Adrian Richard Vargas Cantor
+
+# comando para correr
+php artisan serve --host=0.0.0.0 --port=8000
+
+La base de datos utilizada fue SQLite
+
+##Tinker para poner datos de laboratorio
+Se necesitan datos para poder crear reservas
+Paso 1: abrir Tinker
+php artisan tinker
+
+En la terminal:
+
+php artisan tinker
+Paso 2: pegar 
+App\Models\Laboratorio::createApp\Models\Laboratorio::create(['nombre'=>'fotografia','capacidad'=>20]);
+App\Models\Laboratorio::create(['nombre'=>'video','capacidad'=>30]);
+App\Models\Laboratorio::create(['nombre'=>'sonido','capacidad'=>25]);
+
+Para verificar :
+App\Models\Laboratorio::all();
+
+## Tinker usuarios:
+php artisan tinker
+App\Models\Usuario::create([
+    'nombre' => 'Juan Perez',
+    'identificacion' => '123',
+    'tipo' => 'Estudiante',
+    'dependencia' => 'Ingeniería'
+]);
+
+App\Models\Usuario::create([
+    'nombre' => 'Maria Lopez',
+    'identificacion' => '456',
+    'tipo' => 'Docente',
+    'dependencia' => 'Comunicación'
+]);
+
+
+## Ejemplos de reserva:
+usuario_id: 1
+laboratorio_id: 1
+fecha_solicitud: 2026-05-24
+fecha_inicio: 2026-05-25T10:00
+fecha_fin: 2026-05-25T12:00
+observacion: Clase de fotografía básica
+
+
+usuario_id: 2
+laboratorio_id: 2
+fecha_solicitud: 2026-05-24
+fecha_inicio: 2026-05-26T14:00
+fecha_fin: 2026-05-26T16:00
+observacion: Grabación de video institucional
+
+
+
+usuario_id: 3
+laboratorio_id: 3
+fecha_solicitud: 2026-05-24
+fecha_inicio: 2026-05-27T08:00
+fecha_fin: 2026-05-27T10:00
+observacion: Producción de audio podcast
+
+
+Video con explicacion de como correr el proyecto.
+https://screenrec.com/share/aAFn1SIgZK

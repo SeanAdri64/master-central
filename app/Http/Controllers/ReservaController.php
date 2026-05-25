@@ -62,10 +62,11 @@ class ReservaController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        /*
+        
         $reserva = Reserva::findOrFail($id);
         $reserva->update($request->all());
-        return redirect()->route('reservas.index');*/
+        return redirect()->route('reservas.index');
+        /*
         $request->validate([
     'usuario_id' => 'required|exists:usuarios,id',
     'laboratorio_id' => 'required|exists:laboratorios,id',
@@ -76,7 +77,8 @@ class ReservaController extends Controller
 $reserva->update($request->all());
 
 return redirect('/reservas')->with('success', 'Reserva actualizada');
-    }
+    */
+}
 
     /**
      * Remove the specified resource from storage.
