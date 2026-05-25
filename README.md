@@ -61,6 +61,9 @@ Sean Adrian Richard Vargas Cantor
 # Comando para correr
 php artisan serve --host=0.0.0.0 --port=8000
 
+Se ve el resultado en el link generado en Codespace:
+https://zany-rotary-phone-9wgxrwq5xw9fj5w-8000.app.github.dev/reservas
+
 La base de datos utilizada fue SQLite
 
 ##Tinker para poner datos de laboratorio
