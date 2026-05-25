@@ -11,7 +11,10 @@
         <label>Usuario</label>
         <select name="usuario_id" class="form-control">
             @foreach($usuarios as $usuario)
-                <option value="{{ $usuario->id }}">{{ $usuario->nombre }}</option>
+                <option value="{{ $usuario->id }}">{{ $usuario->nombre }}
+                    {{ $usuario->tipo_usuario }} - 
+                    {{ $usuario->dependencia }}
+                </option>
             @endforeach
         </select>
     </div>

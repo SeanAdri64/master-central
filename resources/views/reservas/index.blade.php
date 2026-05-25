@@ -10,7 +10,10 @@
     <thead class="table-dark">
         <tr>
             <th>ID</th>
-            <th>Usuario</th>
+            <th>Nombre</th>
+            <th>Identificación</th>
+            <th>Tipo Usuario</th>
+            <th>Dependencia</th>
             <th>Laboratorio</th>
             <th>Fecha Inicio</th>
             <th>Fecha Fin</th>
@@ -23,6 +26,9 @@
         <tr>
             <td>{{ $reserva->id }}</td>
             <td>{{ $reserva->usuario->nombre }}</td>
+            <td>{{ $reserva->usuario->identificacion }}</td>
+            <td>{{ $reserva->usuario->tipo_usuario }}</td>
+            <td>{{ $reserva->usuario->dependencia }}</td>
             <td>{{ $reserva->laboratorio->nombre }}</td>
             <td>{{ $reserva->fecha_inicio }}</td>
             <td>{{ $reserva->fecha_fin }}</td>
