@@ -2,7 +2,16 @@
 
 @section('content')
 
+<!--
+|--------------------------------------------------------------------------
+Prueba Técnica Máster Central
+Autor: Sean Adrian Richard Vargas Cantor
+Descripción: Vista creación de reservas.
+|--------------------------------------------------------------------------
+-->
+
 <h2>Crear Reserva</h2>
+
 
 <form method="POST" action="/reservas">
     @csrf

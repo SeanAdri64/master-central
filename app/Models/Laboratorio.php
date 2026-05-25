@@ -1,5 +1,12 @@
 <?php
-
+/*
+|--------------------------------------------------------------------------
+| Prueba Técnica Máster Central
+|--------------------------------------------------------------------------
+| Autor: Sean Adrian Richard Vargas Cantor
+| Modelo de Laboratorio.
+|--------------------------------------------------------------------------
+*/
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;

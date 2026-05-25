@@ -6,9 +6,16 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    /*
+|--------------------------------------------------------------------------
+| Autor: Sean Adrian Richard Vargas Cantor
+| Migracion creacion Tabla de laboratorios.
+|--------------------------------------------------------------------------
+*/
     /**
      * Run the migrations.
      */
+    
     public function up(): void
     {
         Schema::create('laboratorios', function (Blueprint $table) {

@@ -2,6 +2,13 @@
 
 @section('content')
 
+<!--
+|--------------------------------------------------------------------------
+Prueba Técnica Máster Central
+Autor: Sean Adrian Richard Vargas Cantor
+Descripción: Vista principal de reservas.
+|--------------------------------------------------------------------------
+-->
 <h2 class="mb-3">Reservas</h2>
 
 <a href="/reservas/create" class="btn btn-primary mb-3">+ Crear Reserva</a>

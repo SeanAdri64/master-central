@@ -2,6 +2,15 @@
 
 @section('content')
 
+
+<!--
+|--------------------------------------------------------------------------
+Prueba Técnica Máster Central
+Autor: Sean Adrian Richard Vargas Cantor
+Descripción: Vista editar o update de reservas.
+|--------------------------------------------------------------------------
+-->
+
 <h2>Editar Reserva</h2>
 
 <form method="POST" action="/reservas/{{ $reserva->id }}">

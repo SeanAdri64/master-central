@@ -6,6 +6,12 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    /*
+|--------------------------------------------------------------------------
+| Autor: Sean Adrian Richard Vargas Cantor
+| Migración Tabla de usuarios
+|--------------------------------------------------------------------------
+*/
     /**
      * Run the migrations.
      */
